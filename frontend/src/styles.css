@@ -1,0 +1,87 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f8fa;
+  margin: 0;
+  padding: 0;
+}
+.centered-container {
+  max-width: 400px;
+  margin: 80px auto;
+  background: #fff;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 0.8em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.form button {
+  width: 100%;
+  padding: 0.8em;
+  background: #0057ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.navbar {
+  background: #222;
+  color: #fff;
+  padding: 1em;
+  display: flex;
+  gap: 1.5em;
+  align-items: center;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar button {
+  margin-left: auto;
+  background: #ff3b3b;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.dashboard {
+  max-width: 900px;
+  margin: 2em auto;
+  background: #fff;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.dashboard-content {
+  display: flex;
+  gap: 2em;
+}
+.list-container {
+  flex: 1;
+}
+.list {
+  list-style: none;
+  padding: 0;
+}
+.list-item {
+  padding: 1em;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.list-item:hover {
+  background: #f0f4ff;
+}
+.details-container {
+  flex: 1;
+  background: #f8faff;
+  padding: 1em;
+  border-radius: 6px;
+  margin-left: 2em;
+}

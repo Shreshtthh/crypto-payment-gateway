@@ -1,0 +1,117 @@
+body {
+  background: #f6f9fc;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.checkout-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.checkout-panel {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(50,50,93,0.1);
+  padding: 2.5em 2em;
+  min-width: 340px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.payment-method-selector label,
+.amount-input label,
+.wallet-input label {
+  font-weight: 500;
+  margin-bottom: 0.4em;
+  display: block;
+}
+
+.method-options {
+  display: flex;
+  gap: 1em;
+}
+
+.method-btn {
+  background: #f6f9fc;
+  border: 2px solid #e0e6ed;
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  transition: border 0.2s, background 0.2s;
+}
+
+.method-btn.selected {
+  border: 2px solid #635bff;
+  background: #eae6ff;
+}
+
+.method-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 0.7em;
+  border: 1px solid #e0e6ed;
+  border-radius: 6px;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+}
+
+.pay-btn {
+  background: #635bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9em 1.2em;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.7em;
+  transition: background 0.2s;
+}
+
+.pay-btn:disabled {
+  background: #b3b3b3;
+  cursor: not-allowed;
+}
+
+.status-message {
+  padding: 0.7em 1em;
+  border-radius: 6px;
+  margin-top: 1em;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.status-message.success {
+  background: #e6ffed;
+  color: #137333;
+}
+
+.status-message.error {
+  background: #ffebee;
+  color: #b71c1c;
+}
+
+.status-message.loading {
+  background: #fffbe6;
+  color: #9e7700;
+}
+
+.payment-summary {
+  background: #f6f9fc;
+  border-radius: 8px;
+  padding: 1em;
+  margin-top: 0.8em;
+  font-size: 0.98em;
+}
